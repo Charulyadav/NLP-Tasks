@@ -1,0 +1,192 @@
+# File: data/test_part1_in.fasta
+Part 1: Parsing & Classification
+>Seq_1
+ACGTACGT
+Type: DNA
+
+>Seq_2
+AUGCUG
+Type: RNA
+
+>Seq_3
+TUUUU
+Type: Invalid
+
+>Seq_4
+ACGNRYACGT
+Type: DNA
+
+>Seq_5
+augunacg
+Type: RNA
+
+>Seq_6
+TTTTTTT
+Type: DNA
+
+>Seq_7
+UUUNNN
+Type: RNA
+
+>Seq_8
+XYZXYZ
+Type: Invalid
+
+>Seq_9
+ACGTU
+Type: Invalid
+
+>Seq_10
+NRYYNN
+Type: DNA
+
+>Seq_11
+AGCUA
+Type: RNA
+
+>Seq_12
+UAGT
+Type: Invalid
+
+
+============================================================
+
+# File: data/test_part2_in.fasta
+Part 2: Open Reading Frames
+>DNA_1
+Type: DNA
+Found 1 ORF(s):
+Start at 0, Stop at 6, ORF: ATGAAATGA
+
+>DNA_2
+Type: DNA
+Found 0 ORF(s):
+
+>DNA_3
+Type: DNA
+Found 1 ORF(s):
+Start at 0, Stop at 6, ORF: ATGCCCTGA
+
+>RNA_1
+Type: RNA
+Found 1 ORF(s):
+Start at 0, Stop at 9, ORF: AUGAAACCCUGA
+
+>RNA_2
+Type: RNA
+Found 1 ORF(s):
+Start at 0, Stop at 3, ORF: AUGUGA
+
+>INVALID_1
+Type: Invalid
+Skipped (Invalid sequence)
+
+>DNA_4
+Type: DNA
+Found 1 ORF(s):
+Start at 3, Stop at 9, ORF: ATGCCCTAA
+
+>RNA_3
+Type: RNA
+Found 2 ORF(s):
+Start at 0, Stop at 6, ORF: AUGAUGUAG
+Start at 3, Stop at 6, ORF: AUGUAG
+
+>DNA_5
+Type: DNA
+Found 1 ORF(s):
+Start at 0, Stop at 6, ORF: ATGCCCTAG
+
+>RNA_4
+Type: RNA
+Found 1 ORF(s):
+Start at 6, Stop at 9, ORF: AUGUAG
+
+>INVALID_2
+Type: Invalid
+Skipped (Invalid sequence)
+
+>DNA_6
+Type: DNA
+Found 1 ORF(s):
+Start at 0, Stop at 6, ORF: ATGAAATAG
+
+
+============================================================
+
+# File: data/test_part3_in.fasta
+Part 3: Statistics
+>SEQ_DNA_1
+Type: DNA
+Length: 12
+Counts: A=7, C=0, G=2, T=3, ambiguous=0
+Number of ORFs: 1
+
+>SEQ_RNA_1
+Type: RNA
+Length: 12
+Counts: A=7, C=0, G=2, U=3, ambiguous=0
+Number of ORFs: 1
+
+>SEQ_DNA_2
+Type: DNA
+Length: 8
+Counts: A=2, C=2, G=2, T=2, ambiguous=0
+Number of ORFs: 0
+
+>SEQ_DNA_3
+Type: DNA
+Length: 8
+Counts: A=0, C=0, G=0, T=8, ambiguous=0
+Number of ORFs: 0
+
+>SEQ_INVALID_1
+Type: Invalid
+Length: 5
+Skipped (Invalid sequence)
+
+>SEQ_RNA_2
+Type: RNA
+Length: 9
+Counts: A=2, C=3, G=2, U=2, ambiguous=0
+Number of ORFs: 1
+
+>SEQ_DNA_4
+Type: DNA
+Length: 9
+Counts: A=2, C=3, G=2, T=2, ambiguous=0
+Number of ORFs: 1
+
+>SEQ_INVALID_2
+Type: Invalid
+Length: 5
+Skipped (Invalid sequence)
+
+>SEQ_RNA_3
+Type: RNA
+Length: 15
+Counts: A=6, C=3, G=4, U=2, ambiguous=0
+Number of ORFs: 1
+
+>SEQ_DNA_5
+Type: Invalid
+Length: 6
+Skipped (Invalid sequence)
+
+>SEQ_DNA_6
+Type: DNA
+Length: 18
+Counts: A=6, C=3, G=4, T=5, ambiguous=0
+Number of ORFs: 1
+
+>SEQ_RNA_4
+Type: RNA
+Length: 13
+Counts: A=7, C=0, G=2, U=4, ambiguous=0
+Number of ORFs: 1
+
+Valid DNA sequences: 5
+Mean DNA length: 11.0
+Valid RNA sequences: 4
+Mean RNA length: 12.25
+Invalid sequences: 3
